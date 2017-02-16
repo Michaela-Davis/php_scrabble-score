@@ -3,20 +3,35 @@
     {
         private $source;
 
-        // Anagram constructor
+        // Scrabble constructor
         function __construct($source)
         {
             $this->source = $source;
         }
-        // source_text Getter and Setter
-        // function getSourceText()
-        // {
-        //     return $this->source_text;
-        // }
-        // function setSourceText($new_source_text)
-        // {
-        //     $this->personName = (string) $new_source_text;
-        // }
 
+        // source Getter and Setter
+        function getSource()
+        {
+            return $this->source;
+        }
+        function setSource($new_source)
+        {
+            $this->source = (string) $new_source;
+        }
+
+        function checkScrabble()
+        {
+            $source = "k";
+
+            if ($source === "k")
+            {
+                $result = "5";
+                return $result;
+
+            } else {
+                return false;
+            }
+
+        }
     }
 ?>

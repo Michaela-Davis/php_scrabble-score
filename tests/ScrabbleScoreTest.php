@@ -5,8 +5,8 @@
         function test_scrabbleScore_oneLetter()
         {
             //Arrange
-            $test_ScrabbleScore = new Scrabble($source);
             $source = "k";
+            $test_ScrabbleScore = new Scrabble($source);
 
             //Act
             $result = $test_ScrabbleScore->checkScrabble($source);
