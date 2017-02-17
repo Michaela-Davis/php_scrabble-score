@@ -1,0 +1,41 @@
+if ($source === "a")
+{
+    for( $i = 0; $i <= $onePointLetter; $i++)
+    {
+        $result = "1";
+
+    }
+} elseif ($source === ("d"||"g"))
+{
+    $result = "2";
+
+
+} elseif ($source === ("b"||"c"||"m"||"p"))
+{
+    $result = "3";
+
+
+} elseif ($source === ("f"||"h"||"v"||"w"||"y"))
+{
+    $result = "4";
+
+
+} elseif ($source === ("k"))
+{
+    $result = "5";
+
+
+} elseif ($source === ("j"||"x"))
+{
+    $result = "8";
+
+
+} elseif ($source === ("q"||"z"))
+{
+    $result = "10";
+
+}
+else {
+    return false;
+}
+return $result;

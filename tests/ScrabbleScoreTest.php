@@ -2,30 +2,19 @@
     require_once __DIR__ . "/../src/scrabble.php";
     class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     {
-        function test_scrabbleScore_oneLetter()
+        function test_Scrabble()
         {
             //Arrange
-            $source = "k";
+            $source = "i";
             $test_ScrabbleScore = new Scrabble($source);
+
 
             //Act
             $result = $test_ScrabbleScore->checkScrabble($source);
 
             //Assert
-            $this->assertEquals("5", $result);
+            $this->assertEquals("1", $result);
         }
-
-        // function test_anagramChecker_repeatedWord()
-        // {
-        //     //Arrange
-        //     $source_text = "ham";
-        //     $anagram_text = "ham";
-        //     $test_AnagramChecker = new AnagramChecker($source_text, $anagram_text);
-        //     //Act
-        //     $result = $test_AnagramChecker->checkAnagram($source_text, $anagram_text);
-        //     //Assert
-        //     $this->assertEquals(true, $result);
-        // }
 
     }
 ?>
